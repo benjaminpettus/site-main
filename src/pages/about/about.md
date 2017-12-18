@@ -1,7 +1,8 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
 title: Benjamin Pettus
 ---
-### Is a Designer, Web, ... 
+### Is a Designer and Web Developer, ...
+
 Based in Oakland, CA
