@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import github from '../img/github-icon.svg';
+import linkedin from '../img/linkedin.svg'
 import logo from '../img/logo.svg';
 import './all.sass';
 
@@ -11,9 +12,7 @@ const Navbar = () => (
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-          </figure>
+          Benjamin Pettus
         </Link>
       </div>
       <div className="navbar-start">
@@ -25,9 +24,14 @@ const Navbar = () => (
         </Link>
       </div>
       <div className="navbar-end">
-        <a className="navbar-item" href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate" target="_blank" rel="noopener noreferrer">
+        <a className="navbar-item" href="https://github.com/benjaminpettus" target="_blank" rel="noopener noreferrer">
           <span className="icon">
             <img src={github} alt="Github" />
+          </span>
+        </a>
+        <a className="navbar-item" href="https://www.linkedin.com/in/benjamin-pettus-9a596721" target="_blank" rel="noopener noreferrer">
+          <span className="icon">
+            <img src={linkedin} alt="Linkedin" />
           </span>
         </a>
       </div>
@@ -37,7 +41,7 @@ const Navbar = () => (
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet title="Home | Benjamin Pettus" />
     <Navbar />
     <div>{children()}</div>
   </div>
